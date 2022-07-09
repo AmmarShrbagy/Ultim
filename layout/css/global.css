@@ -1,0 +1,166 @@
+/* Font Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* SF Pro Text */
+@import url('https://v1.fontapi.ir/css/SFProDisplay:100;200;300;400;500;600;700;800;900');
+/* Global */
+:root{
+    /* Colors */
+    --yellow: #FFCB33;
+    --black: #282828;
+    --white: #FFFFFF;
+    --light: #FAFAFA;
+    --red: #F55082;
+    --light-red: #FDB8B9;
+    /* Gradients */
+    --color-blue-gradient: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+    --color-black-gradient: linear-gradient(49.57deg, #111111 33.43%, #393939 77.65%);
+    /* Fonts */
+    --raleway-black: 'Raleway', sans-serif;
+    --SF-pro-text: 'SF Pro Text';
+    --montserrat: 'Montserrat';
+    /* Shadows */
+    --box-shadow-light: -38.5582px 1.28527px 81.9448px rgba(207, 192, 192, 0.13);
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+body{
+    font-family: var(--raleway-black);
+    height: 5000px;
+}
+h1 {
+    font-family: var(--raleway-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.75375px;
+    color: var(--white);
+    margin-top: 0;
+}
+h2{
+    font-family: var(--raleway-black);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.405px;
+}
+h3{
+    font-family: var(--raleway-black);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+}
+p, a, b {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.75735px;
+}
+header a{
+    font-size: 1rem;
+}
+a.link{
+    color: var(--red);
+}
+/* Container */
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a.btn{
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 6px;
+}
+/* Small */
+@media (min-width: 576px) {
+    .container{
+        width: 540px;
+    }
+    h1 {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: 0.75375px;
+        color: var(--white);
+        margin-top: 0;
+    }
+    p, a, b {
+        font-family: var(--montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.75735px;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+    h1 {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: 0.75375px;
+    }
+    p, a, b {
+        font-family: var(--montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.75735px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+    h1{
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 0.75375px;
+    }
+    p,a,b{
+        font-family: var(--montserrat);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 29px;
+        letter-spacing: 0.75735px;
+    }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+
+/* XX-Large */
+@media (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+}

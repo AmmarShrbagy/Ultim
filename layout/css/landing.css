@@ -1,0 +1,395 @@
+/* Landing */
+.landing {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    overflow: hidden;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -130px;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+    transform: rotate(-12deg);
+    z-index: 10;
+}
+.landing::after {
+    content: "";
+    position: absolute;
+    top: -130px;
+    left: -130px;
+    width: 250px;
+    height: 250px;
+    background-color: #FAFAFA;
+    z-index: 10;
+    border-radius: 100%;
+    opacity: 20%;
+}
+.landing .container {
+    position: inherit;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.landing .container::before {
+    content: "";
+    position: absolute;
+    bottom: -130px;
+    left: -130px;
+    width: 250px;
+    height: 250px;
+    background-color: #FAFAFA;
+    z-index: 10;
+    border-radius: 100%;
+    opacity: 20%;
+}
+.landing .container svg.img-landing {
+    position: inherit;
+    width: 100%;
+    display: none;
+}
+.landing .container .typography {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    z-index: 11;
+}
+.landing .container .typography h1 {
+    font-family: var(--raleway-black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.75375px;
+    color: var(--white);
+    margin-top: 0;
+}
+.landing .container .typography p {
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.landing .container .typography a.btn
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Extra Small */
+@media (min-width: 360px) {
+    .landing::before {
+        content: "";
+        position: absolute;
+        top: -130px;
+        left: -130px;
+        width: 200%;
+        height: 95%;
+        background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+        transform: rotate(-12deg);
+        z-index: 10;
+    }
+    .landing {
+        width: 100%;
+        height: 105vh;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* Small */
+@media (min-width: 576px) {
+    .landing::before {
+        content: "";
+        position: absolute;
+        top: -130px;
+        left: -130px;
+        width: 200%;
+        height: 95%;
+        background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+        transform: rotate(-12deg);
+        z-index: 10;
+    }
+    .landing {
+        width: 100%;
+        height: 115vh;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .landing .container .typography h1 {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: 0.75375px;
+    }
+    .landing {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .landing {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .landing::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -900px;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+        transform: rotate(-13deg);
+        z-index: 10;
+    }
+    .landing::after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: -150px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container::before {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: -250px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container {
+        position: inherit;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    .landing .container .typography
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .landing .container .typography h1 {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 65px;
+        letter-spacing: 0.75375px;
+    }
+    .landing .container svg.img-landing
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        display: block;
+    }
+}
+
+/* X-Large */
+@media (min-width: 1200px) {
+    .landing {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .landing::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -920px;
+        width: 200%;
+        height: 92%;
+        background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+        transform: rotate(-13deg);
+        z-index: 10;
+    }
+    .landing::after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: -150px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container::before {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: -250px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container {
+        position: inherit;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    .landing .container .typography
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .landing .container .typography h1
+    {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 0.75375px;
+    }
+    .landing .container svg.img-landing
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        display: block;
+    }
+}
+
+/* XX-Large */
+@media (min-width: 1400px) {
+    .landing {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .landing::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -920px;
+        width: 200%;
+        height: 92%;
+        background: linear-gradient(40.5deg, #6FC3DA 24.14%, #9BD5E5 74.13%);
+        transform: rotate(-13deg);
+        z-index: 10;
+    }
+    .landing::after{
+        content: "";
+        position: absolute;
+        top: -150px;
+        left: -150px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container::before {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: -250px;
+        width: 350px;
+        height: 350px;
+        background-color: #FAFAFA;
+        z-index: 10;
+        border-radius: 100%;
+        opacity: 20%;
+    }
+    .landing .container {
+        position: inherit;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    .landing .container .typography
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .landing .container .typography h1
+    {
+        font-family: var(--raleway-black);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 88px;
+        letter-spacing: 0.75375px;
+    }
+    .landing .container svg.img-landing
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        display: block;
+    }
+}
